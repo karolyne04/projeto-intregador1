@@ -1,0 +1,189 @@
+body {
+  margin: 0 auto;
+  background-color: #fffafa;
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 300px;
+  width: 100%;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.bem-vindo {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+
+.bem-vindoinicio {
+  padding: 10px;
+  margin: 1.25rem;
+  white-space: nowrap;
+  font-size: 1.75rem;
+  
+}
+.foto1 {
+  max-width: 100%;
+}
+.slogan {
+  
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btnsinicio {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-items: center;
+  gap: 1rem;
+  margin-left: 30px;
+  
+}
+
+button {
+  border-radius: 50px;
+  padding: 12px 8px;
+  font-size: 1rem;
+  width: 100%;
+  gap: 3rem;
+}
+
+input {
+  border-radius: 8px;
+  padding: 12px 8px;
+  font-size: 1rem;
+  /*width: 100%;*/
+  border: 1px solid #999;
+}
+
+.btnlogin {
+  background-color: black;
+  color: #fffafa;
+  border: 1px solid #000000;
+  text-decoration: none;
+ /* border-radius: 50px;
+  padding: 12px 8px;
+  font-size: 1rem;
+  width: 100%;*/
+  text-align: center;
+}
+.btncadastrar {
+  background-color: #fffafa;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 50px;
+  padding: 12px 8px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.flex-colunm {
+  width: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.btnentrarlogin {
+  width: 60%;
+}
+
+.btnentrar {
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  color: #fffafa;
+  border: 1px solid #000000
+}
+.logo {
+  display: flex; 
+  
+}
+.titulo-pagina {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1rem;
+}
+.cadastro {
+  margin: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.cadastro-empresa {
+  width: 60%;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btnscadastro {
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+}
+.btnvoltar {
+  background-color: #000000;
+  color:#fffafa;
+  border: 1px solid #000000;
+}
+.btnproximo {
+  background-color: #000000;
+  color:#fffafa;
+  border: 1px solid #000000;
+}
+
+.etapas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.etapa{
+  width: 24px;
+  height: 24px;
+  border: 1px solid #999;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.etapas .active{
+  background-color: #4EEE94;
+}
+.sub-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnentrarlogin {
+  width: 80%;
+}
