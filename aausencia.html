@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar</title>
+    <title>Ausência</title>
     <link href="estilo.css" rel="stylesheet">
     <link href="pag.jpg" rel="icon">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-
 </head>
 <body>
     <header class="cabeca">
         <nav class="navbar">
            <img class="logo" src="pag.jpg">
            <p class="nome-funcionario"> carolyne</p>
-           <div class="cont">
-               <span class="mdi mdi-account">Conta</span>
-           </div>
+           <span class="mdi mdi-account">Conta</span>
         </nav>
     </header>
     <main class="home-funcionario">
-        <h2>Registrar ponto</h2>
-        <div class="campo-preechido">
-            <h4>CPF</h4>
-            <div class="validacao">345.786.478-21</div>
-        </div>
-        <form class="forms">
-            <label>Horario que chegou</label>
-            <input type="datetime-local" placeholder="chegada">
-            <label>Almoço/Jantar</label>
-            <input type="datetime-local" placeholder="almoço/jantar">
-            <label>Horario que saiu</label>
-            <input type="datetime-local" placeholder="saida">
-            <div class="btnfuncionario">
-                <button class="btnsalvar">Salvar</button>
+        <forms class="justifications">
+            <label>Escreva a sua justificativa</label>
+            <textarea type="text" rows="12"cols="50" ></textarea>
+            <label>Envie aqui o comprovante</label>
+            <input type="file" name="attachment">
+            <div class="btnjustification">
+                <button class="btn-enviar-justificcation">Enviar</button>
             </div>
-        </form>
+        </forms>
+
     </main>
     <footer>
         <div class="btnsfluxofuncionario">
@@ -54,5 +45,6 @@
             </i>
         </div>
     </footer>
+    
 </body>
 </html>
