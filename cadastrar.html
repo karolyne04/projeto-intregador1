@@ -17,7 +17,7 @@
        </div>
        
        <div class="cadastro">
-           <form class="cadastro-empresa">
+           <form class="cadastro-empresa" action="/action_page.php">
                <div class="etapas">
                    <div class="etapa active"></div>
                    <div class="etapa">2</div>                  
@@ -34,12 +34,12 @@
                <label>Área de atuação</label>
                <input type="text" placeholder="Área de atuação">
                <div class="btnscadastro">
-                   <button class="btnproximo" type="submit">Proximo</button>
+                   <button class="btnproximo" type="submit" onclick="irPaginaEndereco()">Proximo</button>
                </div>
            </form>
        </div>
    </main>
-
+   <script src="execucao.js"></script>
 </body>
 
 </html>

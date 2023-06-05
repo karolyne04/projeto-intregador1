@@ -23,17 +23,36 @@
       
       <form class="flex-colunm ">
         <div class="flex">
-          <input type="text" placeholder="Email" required>
+          <input type="text" id="email" onchange="validateFields()"  placeholder="Email" required>
           <input type="password" placeholder="Senha" required>
           <div class="btnentrarlogin">
-            <button class="btnentrar" onclick="">Entrar</button>
+            <button class="btnentrar" onclick="logarnoapp()">Entrar</button>
           </div>
         </div>
         
       </form>
     </main>
     <footer></footer>
-    <script></script>
-  
+    <script src="execucao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyDp20P90u2v8ETtNNE2ftGT91FKCONM0aU",
+          authDomain: "checkin-time-2b0e6.firebaseapp.com",
+          projectId: "checkin-time-2b0e6",
+          storageBucket: "checkin-time-2b0e6.appspot.com",
+          messagingSenderId: "688554352677",
+          appId: "1:688554352677:web:003924bbd54c746b6b5fcc"
+       };
+       firebase.initializeApp(firebaseConfig);
+
+       console.log('antes');
+       firebase.auth().signInwithEmailAndPassword("carolyne-ka@hotmail.com", "200217").then(response => {
+          console.log('success', response)
+       }).catch(error => {
+        console.log('error', error)
+       });
+       console.log('depois')
+    </script>
   </body>
 </html>

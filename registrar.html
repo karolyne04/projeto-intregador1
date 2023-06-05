@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,53 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
 </head>
+
 <body>
     <header class="cabeca">
         <nav class="navbar">
-           <img class="logo" src="pag.jpg">
-           <p class="nome-funcionario"> carolyne</p>
-           <div class="cont">
-               <span class="mdi mdi-account">Conta</span>
-           </div>
+            <div class="at-once">
+                <img class="logo" src="pag.jpg">
+            </div>
+            <div class="user">
+                <p class="nome-funcionario">Carolyne Ferreira da Silva</p>
+            </div>
+            <div class="cont ">
+                <span class="mdi mdi-account">Conta</span>
+            </div>
         </nav>
     </header>
     <main class="home-funcionario">
-        <h2>Registrar ponto</h2>
-        <div class="campo-preechido">
-            <h4>CPF</h4>
-            <div class="validacao">345.786.478-21</div>
+
+        <p class="tit">horario atual</p>
+        <div class="current-time" id="digital-clock"> </div>
+        <div class="campo">
+            <p>Ultima batida</p>
+            <time></time>
         </div>
-        <form class="forms">
-            <label>Horario que chegou</label>
-            <input type="datetime-local" placeholder="chegada">
-            <label>Almoço/Jantar</label>
-            <input type="datetime-local" placeholder="almoço/jantar">
-            <label>Horario que saiu</label>
-            <input type="datetime-local" placeholder="saida">
-            <div class="btnfuncionario">
-                <button class="btnsalvar">Salvar</button>
-            </div>
-        </form>
+
+        <button class="btn-bater-entrada">bater ponto</button>
+        
     </main>
-    <footer>
+    <footer class="footer">
         <div class="btnsfluxofuncionario">
-            
+
             <i class="mdi">
                 <div class="alert">
                     <span class="mdi mdi-clock-alert-outline"></span>
-                Registro</div>
+                    Registro 
+                </div>
                 <div class="clock-fast">
                     <span class="mdi mdi-clock-fast"></span>
-                Banco de horas</div>
+                    Banco
+                </div>
                 <div class="account">
                     <span class="mdi mdi-account-alert"></span>
-                Ausência</div>
+                    Ausência
+                </div>
             </i>
         </div>
     </footer>
+    <script src="execucao.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link href="estilo.css" rel="stylesheet">
     <link href="pag.jpg" rel="icon">
 </head>
+
 <body>
     <main class="home">
         <div class="titulo-pagina">
             <h2>Cadastro empresa</h2>
         </div>
         <div class="cadastro">
-            <form class="cadastro-empresa">
+            <form id="cadastro-empresa" class="cadastro-empresa">
                 <div class="etapas">
                     <div class="etapa">1</div>
                     <div class="etapa active"></div>
@@ -23,7 +25,7 @@
                     <h3>Endereço da empresa</h3>
                 </div>
                 <label for="cep">CEP</label>
-                <input type="text" placeholder="CEP da empresa" maxlength="9"  id="cep" required>
+                <input type="text" placeholder="CEP da empresa" maxlength="9" id="cep" required>
                 <label for="uf">Estado</label>
                 <input type="text" placeholder="Estado da empresa" id="uf" required>
                 <label for="localidade">Cidade</label>
@@ -35,11 +37,38 @@
                 <label for="numero">Número</label>
                 <input type="number" placeholder="Numero do predio" id="numero" required>
                 <div class="btnscadastro">
-                    <button class="btnproximo" >Próximo</button>
+                    <button class="btnproximo">Próximo</button>
                 </div>
             </form>
         </div>
     </main>
     <script src="main.js"></script>
+    <script>
+
+        document.getElementById('cadastro-empresa').addEventListener('submit', event => {
+            event.preventDefault();
+
+            // Obter os valores dos campos do formulário
+            const cep = document.getElementById('cep').value;
+            const uf = document.getElementById('uf').value;
+            const localidade = document.getElementById('localidade').value;
+            const bairro = document.getElementById('bairro').value;
+            const logradouro = document.getElementById('logradouro').value;
+            const numero = document.getElementById('numero').value;
+
+            // Exibir os valores capturados no console
+            console.log('CEP:', cep);
+            console.log('Estado:', uf);
+            console.log('Cidade:', localidade);
+            console.log('Bairro:', bairro);
+            console.log('Rua:', logradouro);
+            console.log('Número:', numero);
+
+            // Você pode realizar outras ações com os dados capturados, como enviar para um servidor ou processá-los localmente.
+
+            // Redirecionar para a próxima etapa ou realizar outras ações necessárias
+        });
+    </script>
 </body>
+
 </html>
