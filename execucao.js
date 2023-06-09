@@ -1,23 +1,68 @@
 // botoes da primeira pagina
 
-function irparaPaginadeLogin(){
+function irparaPaginadeLogin (){
     window.location.href = 'login.html';
 }
 
-function irparaPaginaCadastro(){
+function irparaPaginaCadastro (){
     window.location.href = 'cadastrar.html';
 }
 
 //botoes do cadastrar empresa etapas
- function irPaginaEndereco(){
+ function irPaginaEndereco (){
     window.location.href = 'enderecoempresa.html';
  }
 
 
 // botao de login
- function logarnoapp(){
+
+ function logarnoapp (){
     window.location.href = 'registrar.html';
+
  }
+ // botao da tela registar
+ function baterPonto (){
+   // document.getElementById("btnjustica").innerHTML = "Ponto registrado com sucesso!";
+   alert("Ponto registrado com sucesso") 
+}
+// função para armazenar os dados e horarios dos pontos
+var pontos = [];
+
+    function baterPonto() {
+      var dataHora = new Date();
+      var data = dataHora.toLocaleDateString();
+      var hora = dataHora.getHours();
+      var minutos = dataHora.getMinutes();
+      var segundos = dataHora.getSeconds();
+
+      var novoPonto = data + " " + hora + ":" + minutos + ":" + segundos;
+      pontos.push(novoPonto);
+
+      if (pontos.length > 4) {
+        pontos.shift(); // Remove o primeiro elemento se houver mais de 4 pontos
+      }
+
+      var pontosTexto = "Últimos pontos registrados:<br>" + pontos.join("<br>");
+      document.getElementById("ultimoPonto").innerHTML = pontosTexto;
+    }
+
+//botoes de navegação
+function irPraRegistro(){
+   window.location.href = 'registrar.html'
+}
+function irPraBanco(){
+   window.location.href = 'banco.html';
+}
+
+function irPraAusencia(){
+   window.location.href = 'ausencia.html';
+
+
+}
+// botão da tela de ausência
+function EnviarArquivos(){
+   alert("Arquivos enviando com sucesso!")
+}
 
 
  // validação
@@ -28,7 +73,7 @@ function irparaPaginaCadastro(){
     }
 
  }
- // hora
+ // função para ver hora atual 
  function Time() {
    var date = new Date();
    var hour = date.getHours();

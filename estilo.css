@@ -81,6 +81,7 @@ input {
 }
 /*tela de login*/
 .btnlogin {
+  cursor: pointer;
   background-color: black;
   color: #fffafa;
   border: 1px solid #000000;
@@ -92,6 +93,7 @@ input {
   text-align: center;
 }
 .btncadastrar {
+  cursor: pointer;
   background-color: #fffafa;
   border: 1px solid #000000;
   color: #000000;
@@ -100,9 +102,10 @@ input {
   font-size: 1rem;
   width: 100%;
   text-align: center;
-  
+
 }
 
+/* tela de login funcionario */
 
 .flex-colunm {
   margin: 0 auto;
@@ -128,6 +131,7 @@ input {
 }
 
 .btnentrar {
+  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -152,6 +156,7 @@ input {
   align-items: center;
   align-content: center;
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .cadastro {
   margin: 0.5rem;
@@ -162,6 +167,9 @@ input {
   justify-items: center;
   align-items: center;
   align-content: center;
+}
+.home label {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .cadastro-empresa {
   width: 60%;
@@ -194,22 +202,30 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 .btnscadastro {
   display: flex;
   flex-direction: row;
   gap:1rem;
 }
-.btnvoltar {
-  background-color: #000000;
-  color:#fffafa;
-  border: 1px solid #000000;
-}
+
+
 .btnproximo {
+  cursor: pointer;
   background-color: #000000;
   color:#fffafa;
   border: 1px solid #000000;
 }
+.btnsalvar {
+  cursor: pointer;
+  background-color: #000000;
+  color: #fffafa;
+  border: 1px solid #000000;
+}
+
+/* tela do funcionario pra bater ponto */
 
 .cabeca {
 width: 100%;
@@ -223,56 +239,75 @@ width: 100%;
   gap: 5%;
   /*justify-content: space-around;*/
 }
-
+.nome-funcionario {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.mdi mdi-account {
+  font-size: 2rem;
+}
 .at-once user cont {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tit  {
-  font-size: 1.7rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+
 }
 .campo {
   height: 100px;
   width: 90%;
-  background-color: #999;
+  background-color: #bdbdbd;
   border-radius: 20px;
   border:  1px solid #000000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /*align-items: center;*/
-  color: #fff;
-  font-size: 1.25rem;
+  align-items: center;
+  color: #000000;
+  font-size: 1.2rem;
 }
 .current-time {
   height: 60px;
   width: 93%;
-  background-color: #999;
+  background-color:#C9C9C9;
   border-radius: 50px;
   display:flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #000000;
   font-size: 1.25rem;
   font-weight: 600;
-  border: 1px solid #000000;
+  border: 1px solid #c9c9c9;
+
 }
 .btn-bater-entrada {
-  background-color: #000000;
+  background-color: #fffafa;
+  color: #000000;
   border: 1px solid #000000;
+  
+}
+.btn-bater-entrada:hover {
+  cursor: pointer;
+  background-color: #000000;
   color:#fff;
+  transition: 2s;
 }
 
 
 .mdi mdi-account {
   height: 50px;
 }
+/* tela banco de horas */
+
 .home-funcionario {
   max-width: 300px;
   width: 100%;
   gap: 1rem;
   margin: 0 auto;
-  height: 650px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,7 +324,7 @@ width: 100%;
 }
 
 .validacao {
-  background-color: #999;
+  background-color: #C9C9C9;
   border: 1px solid #999;
   width: 33%;
   height: 30px;
@@ -316,37 +351,25 @@ width: 100%;
 .btnfuncionario {
   width: 38%;
 }
-.btnsalvar {
+
+.btnsalvar:hover {
+  cursor: pointer;
   width: 90%;
   background-color: #000000;
   color:#fffafa;
   border: 1px solid #000000;
 }
-.footer {
-  position: fixed;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- /* max-width: 300px;*/
-  width: 100%;
-  background-color: #999;
-  bottom: 0;
-
-}
 
 .btnsfluxofuncionario {
-  position:absolute;
+  position:fixed;
+  height: 100px;
   width: 100%;
+  background-color: #999;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.btnsfluxofuncionario p {
-  display: flex;
-  justify-content: center;
+  bottom: 0;
 }
 
 .btnsfluxofuncionario span {
@@ -362,30 +385,48 @@ width: 100%;
 }
 
 .alert {
+  border: 1px solid #000000;
   padding: 10px;
   /*background-color: #fff;*/
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .alert:houver {
-   color: #fff;
-   background-color: #000000;
-   transition: 1s;
-
-  }
+  color: #fff;
+  background-color: #000000;
+  transition: 1s;
+  
+}
 .clock-fast {
+  border: 1px solid #000000;
   display: flex;
   flex-direction: column;
   padding: 10px;
- 
+  font-family: Arial, Helvetica, sans-serif;
+  
   
 }
 .account {
+  border: 1px solid #000000;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   
   
+}
+.footer {
+  position: fixed;
+  height: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ /* max-width: 300px;*/
+  width: 100%;
+  background-color: #999;
+  bottom: 0;
+
 }
 /* pagina de banco de horas*/
 .sample-fields {
@@ -398,9 +439,13 @@ width: 100%;
   justify-content: center;
   align-items: center;
 }
-.home-funcionario p {
-  font-size: 1rem;
-  font-weight: 600;
+text-banco {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sample-fields p {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,9 +462,19 @@ width: 100%;
   padding: 0.25rem;
   margin: 0.25rem;
   width: 100%;
-  background-color: #999;
+  border: 1px solid #999;
   color: #000000;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.acc-ta {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: center;
 }
 .compare {
   display: flex;
@@ -433,9 +488,13 @@ width: 100%;
   margin: 0.25rem;
   height: 30px;
   width: 100%;
-  background-color: #999;
+  border: 1px solid #999;
   color: #000000;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 .stack {
   display: flex;
@@ -449,9 +508,13 @@ width: 100%;
   margin: 0.25rem;
   height: 30px;
   width: 100%;
-  background-color: #999;
+  border:1px solid #999;
   color: #000000;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 .cake {
   display: flex;
@@ -466,11 +529,15 @@ width: 100%;
   margin: 0.25rem;
   height: 30px;
   width: 100%;
-  background-color: #999;
+  border: 1px solid #999;
   color: #000000;
   display: flex;
   align-items: center;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
 }
 .off {
@@ -485,9 +552,14 @@ width: 100%;
   margin: 0.25rem;
   height: 30px;
   width: 100%;
-  background-color: #999;
+  border:1px solid #999;
   color: #000000;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
 }
 /* tela de ausência */
 .justifications {
@@ -497,21 +569,33 @@ width: 100%;
   align-items: center;
   gap: 0.5rem;
 }
+.justifications label {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
 .texto {
-  border: 1px solid #999;
+  border: 2px solid #999;
   width: 93%;
 }
 .comprovante {
   width: 90%;
-  border: 1px solid #999;
+  border: 1.6px solid #999;
 }
 .btnjustification {
   width: 93%;
 }
 .btn-enviar-justificcation {
+  cursor: pointer;
   width: 100%;
+  background-color: #fffafa;
+  color: #000000;
+  border: 1px solid #000000;
+
+}
+.btn-enviar-justificcation:hover {
+  cursor: pointer;
   background-color: #000000;
   color: #fff;
-  border: 1px solid #000000;
+  transition: 2s;
 
 }

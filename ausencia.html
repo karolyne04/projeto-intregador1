@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,32 +25,36 @@
     </header>
     <main class="home-funcionario">
         <forms class="justifications">
-            <label>Escreva a sua justificativa</label>
+            <label>Escreva a justificativa</label>
             <textarea  class="texto" type="text" rows="12"cols="50" ></textarea>
             <label>Envie aqui o comprovante</label>
             <input  class="comprovante" type="file" name="attachment">
             <div class="btnjustification">
-                <button class="btn-enviar-justificcation">Enviar</button>
+                <button id="btnjustica" class="btn-enviar-justificcation"  onclick="EnviarArquivos()" >Enviar</button>
             </div>
         </forms>
-
-    </main>
-    <footer class="footer">
         <div class="btnsfluxofuncionario">
             
             <i class="mdi">
-                <div class="alert">
+                <div id="registration" class="alert" onclick="irPraRegistro()">
                     <span class="mdi mdi-clock-alert-outline"></span>
-                Registro</div>
-                <div class="clock-fast">
-                    <span class="mdi mdi-clock-fast"></span>
-                Banco de horas</div>
-                <div class="account">
+                    Registro
+                </div>
+                <div id="bank-hours"  class="clock-fast" onclick="irPraBanco()">
+                    <span class="mdi mdi-database-sync"></span>
+                    Banco de horas
+                </div>
+                <div id="absence" class="account" onclick="irPraAusencia()">
                     <span class="mdi mdi-account-alert"></span>
-                Ausência</div>
+                    Ausência
+                </div>
             </i>
         </div>
+    </main>
+    <footer class="footer">
+
     </footer>
-    
+
+    <script defer src="execucao.js"></script>
 </body>
 </html>

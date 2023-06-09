@@ -28,34 +28,33 @@
     </header>
     <main class="home-funcionario">
 
-        <p class="tit">horario atual</p>
+        <p class="tit">Horário atual</p>
         <div class="current-time" id="digital-clock"> </div>
-        <div class="campo">
+        <div id="ultimoPonto" class="campo">
             <p>Ultima batida</p>
             <time></time>
         </div>
 
-        <button class="btn-bater-entrada">bater ponto</button>
-        
-    </main>
-    <footer class="footer">
+        <button class="btn-bater-entrada" onclick="baterPonto()">Bater ponto</button>
         <div class="btnsfluxofuncionario">
-
+            
             <i class="mdi">
-                <div class="alert">
+                <div id="registration" class="alert" onclick="irPraRegistro()">
                     <span class="mdi mdi-clock-alert-outline"></span>
-                    Registro 
+                    Registro
                 </div>
-                <div class="clock-fast">
-                    <span class="mdi mdi-clock-fast"></span>
-                    Banco
+                <div id="bank-hours"  class="clock-fast" onclick="irPraBanco()">
+                    <span class="mdi mdi-database-sync"></span>
+                    Banco de horas
                 </div>
-                <div class="account">
+                <div id="absence" class="account" onclick="irPraAusencia()">
                     <span class="mdi mdi-account-alert"></span>
                     Ausência
                 </div>
             </i>
         </div>
+    </main>
+    <footer class="footer">    
     </footer>
     <script src="execucao.js"></script>
 </body>
