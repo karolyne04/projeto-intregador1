@@ -12,14 +12,34 @@ function irparaPaginaCadastro (){
  function irPaginaEndereco (){
     window.location.href = 'enderecoempresa.html';
  }
-
-
+function irPaginaFuncionario(){
+   window.location.href = 'funcionario.html';
+}
+function irPaginaEndereccoFuncionario(){
+   window.location.href = 'enderecofuncionario.html';
+}
+function irLogarAoSistemaF(){
+   window.location.href = 'login.html';
+}
 // botao de login
 
  function logarnoapp (){
     window.location.href = 'registrar.html';
-
  }
+
+ var caminho = window.location.pathname;
+ 
+ if (caminho.includes('/registrar.html')) {
+   document.getElementById('registration').classList.add('ativo');
+ } else if (caminho.includes('/banco.html')) {
+   document.getElementById('bank-hours').classList.add('ativo');
+ } else if (caminho.includes('/ausencia.html')) {
+   document.getElementById('absence').classList.add('ativo');
+ }
+
+// Verifica qual botão de navegação corresponde à página atual
+
+
  // botao da tela registar
  function baterPonto (){
    // document.getElementById("btnjustica").innerHTML = "Ponto registrado com sucesso!";
