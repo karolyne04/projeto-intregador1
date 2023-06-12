@@ -19,14 +19,11 @@ function irPaginaEndereccoFuncionario(){
    window.location.href = 'enderecofuncionario.html';
 }
 function irLogarAoSistemaF(){
+  showLoading();
    window.location.href = 'login.html';
 }
-// botao de login
 
- function logarnoapp (){
-    window.location.href = 'registrar.html';
- }
-
+// cor dos botoes da navegação
  var caminho = window.location.pathname;
  
  if (caminho.includes('/registrar.html')) {
@@ -40,9 +37,8 @@ function irLogarAoSistemaF(){
 // Verifica qual botão de navegação corresponde à página atual
 
 
- // botao da tela registar
+ // botao da tela registrar
  function baterPonto (){
-   // document.getElementById("btnjustica").innerHTML = "Ponto registrado com sucesso!";
    alert("Ponto registrado com sucesso") 
 }
 // função para armazenar os dados e horarios dos pontos
