@@ -381,7 +381,7 @@ width: 100%;
 }
 
 .btnsfluxofuncionario {
-  position: relative;
+  position: static;
   height: 100px;
   width: 100%;
   background-color: #999;
