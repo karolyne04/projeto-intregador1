@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +14,11 @@
             <h2>Cadastrar funcionario</h2>
         </div>
         <div  class="cadastro">
-            <form class="cadastro-empresa">
+            <form class="cadastro-empresa" target="_blank">
                 <div class="etapas">
-                    <div class="etapa active"></div>
+                    <div class="etapa">1</div>
                     <div class="etapa">2</div>
+                    <div class="etapa active"></div>
                 </div>
                 <div class="sub-titulo">
                     <h3>Cadastrar funcionario</h3>
@@ -39,11 +40,12 @@
                 <label>Qual CNPJ da empresa</label>
                 <input type="text" placeholder="Qual CNPJ da sua empresa" id="qual-cnpj">
                 <div class="btnscadastro">
-                    <button class="btnproximo" onclick="irPaginaEndereccoFuncionario()">Proximo</button>
+                    <button class="btnproximo" onclick="irLogarAoSistema()" >Salvar</button>
                 </div>
             </form>
         </div>
     </main>
+    <script src="execucao.js"></script>
     
 </body>
 </html>

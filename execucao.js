@@ -15,11 +15,7 @@ function irparaPaginaCadastro (){
 function irPaginaFuncionario(){
    window.location.href = 'funcionario.html';
 }
-function irPaginaEndereccoFuncionario(){
-   window.location.href = 'enderecofuncionario.html';
-}
-function irLogarAoSistemaF(){
-  showLoading();
+function irLogarAoSistema(){
    window.location.href = 'login.html';
 }
 
@@ -76,8 +72,15 @@ function irPraAusencia(){
 
 }
 // botão da tela de ausência
+
+
+
 function EnviarArquivos(){
-   alert("Arquivos enviando com sucesso!")
+   if(texto.value === "" || comprovante.value === "") {
+      alert("Insira o arquivo")
+   }else {
+      alert("Arquivo enviado com sucesso!");
+   }
 }
 
 
