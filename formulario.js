@@ -17,7 +17,7 @@ function armazenarDados() {
     var bairro = form.elements["bairro"].value;
     var logradouro = form.elements["logradouro"].value;
     var numero = form.elements["numero"].value;
-    var 
+    
 
     // Armazene os dados em variáveis ou em uma estrutura de dados adequada
     // Por exemplo, você pode usar um objeto para armazenar os dados:

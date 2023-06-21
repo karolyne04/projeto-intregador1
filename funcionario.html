@@ -34,7 +34,12 @@
                 <label>Celular</label>
                 <input type="number" placeholder="Celular" id="celular" required>
                 <label>Senha</label>
-                <input type="passowold" placeholder="senha" id="senha-f" required>
+                <div class="error" id="password-required">Senha obrigatoria</div>
+                <div class="error" id="must-have-characters">Deve ter pelo o menos 6 carácteres</div>
+                <input type="password" placeholder="senha" id="senha-f" required>
+                <label>Confirmar senha</label>
+                <input type="password" placeholder="Repita a senha">
+                <div class="error">Senha e Confirmar senha deve ser iguais</div>
                 <div class="btnscadastro">
                     <button class="btnproximo" onclick="irLogarAoSistema()" >Salvar</button>
                 </div>
